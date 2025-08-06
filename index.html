@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dipesh Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+ 
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Dipesh</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="resume.html" target="_blank">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="image.jpg" alt="Dipesh Photo">
+    <h1>Hello, I'm Dipesh</h1>
+    <p>BCA 2nd Year Student | Full Stack Developer</p>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate developer with a focus on modern web technologies. I love crafting clean, user-friendly interfaces and building scalable backend systems using Node.js, Express, and MongoDB. I'm constantly learning and eager to contribute to impactful tech solutions.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <div class="project-item">
+       <a href="https://dipesh-1no.github.io/-Raksha-Bandhan-Celebration/
+">
+        <h3>Raksha Bandhan celebrating</h3><br>
+         <p>A festive web project celebrating Raksha Bandhan with interactive design, showcasing traditions, photo galleries, and heartfelt messages. Built using HTML, CSS, and JavaScript to spread joy and honor the special bond between brothers and sisters.    </p></a>
+      </div>
+       </a>
+       <div class="project-list">
+      <div class="project-item">
+     <a href="http://dipeshit.me/Image-finder/">
+      <h3>Random Image Finder </h3>
+      <p>A responsive Random Image Finder built with HTML, CSS, and JavaScript & Api</p>
+     </a>
+      </div>
+      </div>
+      <div class="project-item">
+        <h3>To-Do App</h3>
+        <p>A full-stack task manager app using  (React, JavaScript).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-list">
+      <button>HTML</button>
+      <button>CSS</button>
+      <button>JavaScript</button>
+      <button>React</button>
+      <button>Node.js</button>
+      <button>Express.js</button>
+      <button>MongoDB</button>
+      <button>Git</button>
+      <button>GitHub</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <!-- Footer -->
+<footer>
+  <p>© 2025 Dipesh. All rights reserved.</p>
+  <p>
+    📧 <a href="mailto:Dipeshitsolution1@gmail.com">Dipeshitsolution1@gmail.com</a><br>
+    📞 <a href="tel:+918306073071">+91 8306073071</a>
+  </p>
+
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/dipesh-yadav-321a62329/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/Dipesh-1no/" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/i_am_dipesh_1040/" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+
+
+
+  <script>
+    let prevScrollPos = window.pageYOffset;
+  const navbar = document.querySelector(".navbar");
+
+  window.onscroll = function() {
+    const currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+      // User is scrolling up -> show navbar
+      navbar.style.top = "0";
+    } else {
+      // User is scrolling down -> hide navbar
+      navbar.style.top = "-80px";  // adjust height if navbar height is different
+    }
+
+    prevScrollPos = currentScrollPos;
+  };
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
